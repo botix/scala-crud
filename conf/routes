@@ -1,0 +1,11 @@
+GET         /                         controllers.AppController.index
+
+GET         /car/adverts/:id          controllers.CarController.listCarAdvertById(id: Int)
+
+GET         /car/adverts              controllers.CarController.listCarAdvert(sortby: String ?= "id")
+
+POST        /car/adverts              controllers.CarController.createCarAdvert
+
+PUT         /car/adverts/:id          controllers.CarController.updateCarAdvert(id: Int)
+
+DELETE      /car/adverts/:id          controllers.CarController.deleteCarAdvert(id: Int)
